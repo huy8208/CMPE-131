@@ -1,0 +1,88 @@
+p {
+  font-size: 1.2em;
+  text-align: center;
+}
+h4,h3,h2,h5{
+  text-align: center;
+}
+img {
+  height:100%;
+  position: absolute;
+  object-fit: fit;
+  max-width: 100%;
+  max-height: auto;
+}
+
+#relevant-courseworks-paragraph{
+  text-align: left;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.6fr 1.4fr;
+}
+
+.container .left-sidebar {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* background-color: yellow; */
+  /* grid-template-areas:
+    "sidebar"
+    "sidebar main"
+    "sidebar main"
+    "sidebar main" */
+}
+
+.container .main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1.8fr 0.5fr 0.5fr;
+}
+
+.container .left-sidebar .profile-pictures {
+  position: relative;
+  background-color: blue;
+  height: 100%;
+}
+
+.container .left-sidebar .info {
+  background-color: blue;
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: 0;
+}
+
+.container .left-sidebar .skills {
+  background-color: blue;
+}
+
+.container .left-sidebar .relevant-courseworks {
+  background-color: blue;
+  /* grid-area: sidebar; */
+}
+
+.left-sidebar p, h3, h4, h5, h2{
+  color: white;
+}
+
+
+.container .main-content .objective {
+  background-color: #d237c5;
+  /* grid-area: main; */
+}
+
+.container .main-content .projects {
+  background-color: #52a602;
+  /* grid-area: main; */
+}
+
+.container .main-content .education {
+  background-color: #9a0f65;
+  /* grid-area: main; */
+}
+
+.container .main-content .work-experiences {
+  background-color: #e64c2d;
+  /* grid-area: main; */
+}
