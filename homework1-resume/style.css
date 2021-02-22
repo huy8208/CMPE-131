@@ -16,11 +16,35 @@ body {
   color: #555555;
 }
 
+
+/* HEADING AND TEXT */
 p {
-  font-size: 1.2em;
+  font-size: 1.0em;
+  /* text-align: center; */
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.slogan{
+  margin-bottom: 15px;
   text-align: center;
 }
 
+.heading{
+  color: #4DB3EF;
+}
+
+h5{
+  margin-left: 15px;
+}
+
+.gap{
+  margin-bottom:10px;
+}
+
+/* img */
 img {
   height:100%;
   width: 100%;
@@ -57,6 +81,8 @@ img {
 
 .container .left-sidebar .skills {
   background-color: #4DB3EF;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container .left-sidebar .skills ul li .skill_progress {
@@ -67,28 +93,40 @@ img {
   position: relative;
 }
 
-.slogan{
-  margin: 50px 50px 20px 50px;
-  text-align: center;
+.container .left-sidebar .skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
 }
 
-.heading{
-  color: #4DB3EF;
+.skill_name{
+  width:62%;
 }
 
-
+.container .left-sidebar .skills ul li{
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .container .left-sidebar .relevant-courseworks {
   background-color: #4DB3EF;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* right hand side */
 
 .container .main-content {
   display: grid;
-  grid-template-rows: 0.2fr 1.8fr 0.5fr 0.5fr;
+  grid-template-rows: 0.2fr 0.5fr 0.3fr 0.5fr;
   background-color: white;
-  padding-left: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-right: 50px;
   padding-top: 50px;
 }
@@ -100,14 +138,13 @@ img {
 }
 
 
-
-.container .main-content .objective {
-  /* background-color: #d237c5; */
+.objective, .projects, .education {
+  padding-bottom:5px;
+  margin-bottom:10px;
+  border-bottom: 2px solid #b1eaff;
 }
 
-.container .main-content .projects {
-  /* background-color: #52a602; */
-}
+
 
 .container .main-content .education {
   /* background-color: #9a0f65; */
