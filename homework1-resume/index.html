@@ -118,8 +118,10 @@
       </div>
       <div class="projects">
         <h4>PROJECTS</h4>
-        <h4 class="heading">FASTAZ - SHOPEE SELLERS MANAGEMENT SYSTEM</h4>
-        <h5>DEC 2020 - PRESENT</h5>
+        <div class="project-name">
+          <h4 class="heading">FASTAZ - SHOPEE SELLERS MANAGEMENT SYSTEM</h4>
+          <h5>DEC 2020 - PRESENT</h5>
+        </div>
         <ul class="gap">
           <li>-Cross-platform desktop application.</li>
           <li>-Participating in application design,planning and implementation.</li>
@@ -127,19 +129,32 @@
           <li>-Working as a backend engineer, successfully integrating mongoDB with application.</li>
           <li>-Errors catching and debugging.</li>
         </ul>
-        <h4 class="heading">FOODIE - NUTRITION APPLICATION</h4>
-        <h5>APR 2019 - JUN 2019</h5>
+        <div class="project-name">
+          <h4 class="heading">FOODIE - NUTRITION APPLICATION FINDER</h4>
+          <h5>APR 2019 - JUN 2019</h5>
+        </div>
         <ul class="gap">
           <li>-Working with api requests to retrieve and post data.</li>
           <li>-Participating in the design, planning process.</li>
           <li>-Successfully utilizing Python multi-threads and multi-processing modules.</li>
         </ul>
+        <form style="margin-left:180px">
+           <select name="Projects">
+             <option href = "project1.html" id="project1-textfield" value="project1">project1</option>
+             <option href = "project2.html" id="project2-textfield" value="project2">project2</option>
+           </select>
+           <button type="button" onclick="openProject()" value="Click" style="width:100px; margin-left:10px; text-align:center;">View Project</button>
+        </form>
       </div>
 
-      <div class="education">
+      <div class="education" style="position:relative">
         <h4>EDUCATION</h4>
         <h4 class="heading">SAN JOSE STATE UNIVERSITY, SAN JOSE, CA</h4>
         <p class="bold">BS Software Engineering — gpa: 3.7 - Fall 2022</p>
+        <div class="center" style="display:flex; height: 20px;">
+          <input type="password" id="pwd" name="pwd" style="border: #4DB3EF solid 2px; border-radius: 5px; padding: 5px;">
+          <button type="button" onclick="openTranscript()" value="Click" style="width:100px; margin-left:10px; text-align:center;">View Transcript</button>
+        </div>
       </div>
 
       <div class="work-experiences">
@@ -152,7 +167,10 @@
 
 
   </div>
-  <script src="js/scripts.js"></script>
+
+
+
+  <script src="/Users/HuyNguyen/Desktop/Coding/CMPE-131/homework1-resume/tasks.js"></script>
 </body>
 
 
