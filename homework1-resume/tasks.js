@@ -4,7 +4,7 @@ function openTranscript(){
     window.open('Transcript.html')
   }
   else{
-    alert("Please enter correct password to view the transcript!");
+    alert("Please enter the correct password to view transcript!");
   }
 }
 
