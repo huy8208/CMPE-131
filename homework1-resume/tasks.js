@@ -4,11 +4,12 @@ function openTranscript(){
     window.open('Transcript.html')
   }
   else{
-    alert("Access denied! Incorrect password!");
+    alert("Please enter correct password to view the transcript!");
   }
 }
 
 function openProject(){
-  var input = document.getElementById('project1-textfield').value;
-  alert(input);
+  var selectedProject = document.getElementById('project-option').value;
+  window.open(String(selectedProject)+'.html')
+  console.log(String(selectedProject)+'.html')
 }
