@@ -13,3 +13,8 @@ function openProject(){
   window.open(String(selectedProject)+'.html')
   console.log(String(selectedProject)+'.html')
 }
+
+var zero = 0
+var one = 10
+
+var result = one/0;
